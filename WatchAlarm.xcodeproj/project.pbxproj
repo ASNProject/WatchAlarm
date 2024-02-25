@@ -1,0 +1,1026 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FD6FC29E2B8BC1EC00B2ECD7 /* WatchAlarmApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD6FC29D2B8BC1EC00B2ECD7 /* WatchAlarmApp.swift */; };
+		FD6FC2A02B8BC1EC00B2ECD7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD6FC29F2B8BC1EC00B2ECD7 /* ContentView.swift */; };
+		FD6FC2A22B8BC1EE00B2ECD7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD6FC2A12B8BC1EE00B2ECD7 /* Assets.xcassets */; };
+		FD6FC2A52B8BC1EE00B2ECD7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD6FC2A42B8BC1EE00B2ECD7 /* Preview Assets.xcassets */; };
+		FD6FC2AF2B8BC1EE00B2ECD7 /* WatchAlarmTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD6FC2AE2B8BC1EE00B2ECD7 /* WatchAlarmTests.swift */; };
+		FD6FC2B92B8BC1EE00B2ECD7 /* WatchAlarmUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD6FC2B82B8BC1EE00B2ECD7 /* WatchAlarmUITests.swift */; };
+		FD6FC2BB2B8BC1EE00B2ECD7 /* WatchAlarmUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD6FC2BA2B8BC1EE00B2ECD7 /* WatchAlarmUITestsLaunchTests.swift */; };
+		FD6FC2C12B8BC1EE00B2ECD7 /* WatchAlarm Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = FD6FC2C02B8BC1EE00B2ECD7 /* WatchAlarm Watch App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		FD6FC2C62B8BC1EE00B2ECD7 /* WatchAlarmApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD6FC2C52B8BC1EE00B2ECD7 /* WatchAlarmApp.swift */; };
+		FD6FC2C82B8BC1EE00B2ECD7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD6FC2C72B8BC1EE00B2ECD7 /* ContentView.swift */; };
+		FD6FC2CA2B8BC1EE00B2ECD7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD6FC2C92B8BC1EE00B2ECD7 /* Assets.xcassets */; };
+		FD6FC2CD2B8BC1EE00B2ECD7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD6FC2CC2B8BC1EE00B2ECD7 /* Preview Assets.xcassets */; };
+		FD6FC2D72B8BC1EF00B2ECD7 /* WatchAlarm_Watch_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD6FC2D62B8BC1EF00B2ECD7 /* WatchAlarm_Watch_AppTests.swift */; };
+		FD6FC2E12B8BC1EF00B2ECD7 /* WatchAlarm_Watch_AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD6FC2E02B8BC1EF00B2ECD7 /* WatchAlarm_Watch_AppUITests.swift */; };
+		FD6FC2E32B8BC1EF00B2ECD7 /* WatchAlarm_Watch_AppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD6FC2E22B8BC1EF00B2ECD7 /* WatchAlarm_Watch_AppUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FD6FC2AB2B8BC1EE00B2ECD7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FD6FC2922B8BC1EB00B2ECD7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FD6FC2992B8BC1EC00B2ECD7;
+			remoteInfo = WatchAlarm;
+		};
+		FD6FC2B52B8BC1EE00B2ECD7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FD6FC2922B8BC1EB00B2ECD7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FD6FC2992B8BC1EC00B2ECD7;
+			remoteInfo = WatchAlarm;
+		};
+		FD6FC2C22B8BC1EE00B2ECD7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FD6FC2922B8BC1EB00B2ECD7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FD6FC2BF2B8BC1EE00B2ECD7;
+			remoteInfo = "WatchAlarm Watch App";
+		};
+		FD6FC2D32B8BC1EF00B2ECD7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FD6FC2922B8BC1EB00B2ECD7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FD6FC2BF2B8BC1EE00B2ECD7;
+			remoteInfo = "WatchAlarm Watch App";
+		};
+		FD6FC2DD2B8BC1EF00B2ECD7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FD6FC2922B8BC1EB00B2ECD7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FD6FC2BF2B8BC1EE00B2ECD7;
+			remoteInfo = "WatchAlarm Watch App";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		FD6FC2E92B8BC1EF00B2ECD7 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				FD6FC2C12B8BC1EE00B2ECD7 /* WatchAlarm Watch App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		FD6FC29A2B8BC1EC00B2ECD7 /* WatchAlarm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WatchAlarm.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FD6FC29D2B8BC1EC00B2ECD7 /* WatchAlarmApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchAlarmApp.swift; sourceTree = "<group>"; };
+		FD6FC29F2B8BC1EC00B2ECD7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		FD6FC2A12B8BC1EE00B2ECD7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FD6FC2A42B8BC1EE00B2ECD7 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		FD6FC2AA2B8BC1EE00B2ECD7 /* WatchAlarmTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WatchAlarmTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FD6FC2AE2B8BC1EE00B2ECD7 /* WatchAlarmTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchAlarmTests.swift; sourceTree = "<group>"; };
+		FD6FC2B42B8BC1EE00B2ECD7 /* WatchAlarmUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WatchAlarmUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FD6FC2B82B8BC1EE00B2ECD7 /* WatchAlarmUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchAlarmUITests.swift; sourceTree = "<group>"; };
+		FD6FC2BA2B8BC1EE00B2ECD7 /* WatchAlarmUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchAlarmUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		FD6FC2C02B8BC1EE00B2ECD7 /* WatchAlarm Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "WatchAlarm Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FD6FC2C52B8BC1EE00B2ECD7 /* WatchAlarmApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchAlarmApp.swift; sourceTree = "<group>"; };
+		FD6FC2C72B8BC1EE00B2ECD7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		FD6FC2C92B8BC1EE00B2ECD7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FD6FC2CC2B8BC1EE00B2ECD7 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		FD6FC2D22B8BC1EF00B2ECD7 /* WatchAlarm Watch AppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "WatchAlarm Watch AppTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FD6FC2D62B8BC1EF00B2ECD7 /* WatchAlarm_Watch_AppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchAlarm_Watch_AppTests.swift; sourceTree = "<group>"; };
+		FD6FC2DC2B8BC1EF00B2ECD7 /* WatchAlarm Watch AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "WatchAlarm Watch AppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FD6FC2E02B8BC1EF00B2ECD7 /* WatchAlarm_Watch_AppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchAlarm_Watch_AppUITests.swift; sourceTree = "<group>"; };
+		FD6FC2E22B8BC1EF00B2ECD7 /* WatchAlarm_Watch_AppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchAlarm_Watch_AppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FD6FC2972B8BC1EC00B2ECD7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FD6FC2A72B8BC1EE00B2ECD7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FD6FC2B12B8BC1EE00B2ECD7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FD6FC2BD2B8BC1EE00B2ECD7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FD6FC2CF2B8BC1EF00B2ECD7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FD6FC2D92B8BC1EF00B2ECD7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FD6FC2912B8BC1EB00B2ECD7 = {
+			isa = PBXGroup;
+			children = (
+				FD6FC29C2B8BC1EC00B2ECD7 /* WatchAlarm */,
+				FD6FC2AD2B8BC1EE00B2ECD7 /* WatchAlarmTests */,
+				FD6FC2B72B8BC1EE00B2ECD7 /* WatchAlarmUITests */,
+				FD6FC2C42B8BC1EE00B2ECD7 /* WatchAlarm Watch App */,
+				FD6FC2D52B8BC1EF00B2ECD7 /* WatchAlarm Watch AppTests */,
+				FD6FC2DF2B8BC1EF00B2ECD7 /* WatchAlarm Watch AppUITests */,
+				FD6FC29B2B8BC1EC00B2ECD7 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FD6FC29B2B8BC1EC00B2ECD7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FD6FC29A2B8BC1EC00B2ECD7 /* WatchAlarm.app */,
+				FD6FC2AA2B8BC1EE00B2ECD7 /* WatchAlarmTests.xctest */,
+				FD6FC2B42B8BC1EE00B2ECD7 /* WatchAlarmUITests.xctest */,
+				FD6FC2C02B8BC1EE00B2ECD7 /* WatchAlarm Watch App.app */,
+				FD6FC2D22B8BC1EF00B2ECD7 /* WatchAlarm Watch AppTests.xctest */,
+				FD6FC2DC2B8BC1EF00B2ECD7 /* WatchAlarm Watch AppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FD6FC29C2B8BC1EC00B2ECD7 /* WatchAlarm */ = {
+			isa = PBXGroup;
+			children = (
+				FD6FC29D2B8BC1EC00B2ECD7 /* WatchAlarmApp.swift */,
+				FD6FC29F2B8BC1EC00B2ECD7 /* ContentView.swift */,
+				FD6FC2A12B8BC1EE00B2ECD7 /* Assets.xcassets */,
+				FD6FC2A32B8BC1EE00B2ECD7 /* Preview Content */,
+			);
+			path = WatchAlarm;
+			sourceTree = "<group>";
+		};
+		FD6FC2A32B8BC1EE00B2ECD7 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				FD6FC2A42B8BC1EE00B2ECD7 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		FD6FC2AD2B8BC1EE00B2ECD7 /* WatchAlarmTests */ = {
+			isa = PBXGroup;
+			children = (
+				FD6FC2AE2B8BC1EE00B2ECD7 /* WatchAlarmTests.swift */,
+			);
+			path = WatchAlarmTests;
+			sourceTree = "<group>";
+		};
+		FD6FC2B72B8BC1EE00B2ECD7 /* WatchAlarmUITests */ = {
+			isa = PBXGroup;
+			children = (
+				FD6FC2B82B8BC1EE00B2ECD7 /* WatchAlarmUITests.swift */,
+				FD6FC2BA2B8BC1EE00B2ECD7 /* WatchAlarmUITestsLaunchTests.swift */,
+			);
+			path = WatchAlarmUITests;
+			sourceTree = "<group>";
+		};
+		FD6FC2C42B8BC1EE00B2ECD7 /* WatchAlarm Watch App */ = {
+			isa = PBXGroup;
+			children = (
+				FD6FC2C52B8BC1EE00B2ECD7 /* WatchAlarmApp.swift */,
+				FD6FC2C72B8BC1EE00B2ECD7 /* ContentView.swift */,
+				FD6FC2C92B8BC1EE00B2ECD7 /* Assets.xcassets */,
+				FD6FC2CB2B8BC1EE00B2ECD7 /* Preview Content */,
+			);
+			path = "WatchAlarm Watch App";
+			sourceTree = "<group>";
+		};
+		FD6FC2CB2B8BC1EE00B2ECD7 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				FD6FC2CC2B8BC1EE00B2ECD7 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		FD6FC2D52B8BC1EF00B2ECD7 /* WatchAlarm Watch AppTests */ = {
+			isa = PBXGroup;
+			children = (
+				FD6FC2D62B8BC1EF00B2ECD7 /* WatchAlarm_Watch_AppTests.swift */,
+			);
+			path = "WatchAlarm Watch AppTests";
+			sourceTree = "<group>";
+		};
+		FD6FC2DF2B8BC1EF00B2ECD7 /* WatchAlarm Watch AppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				FD6FC2E02B8BC1EF00B2ECD7 /* WatchAlarm_Watch_AppUITests.swift */,
+				FD6FC2E22B8BC1EF00B2ECD7 /* WatchAlarm_Watch_AppUITestsLaunchTests.swift */,
+			);
+			path = "WatchAlarm Watch AppUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FD6FC2992B8BC1EC00B2ECD7 /* WatchAlarm */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FD6FC2EA2B8BC1EF00B2ECD7 /* Build configuration list for PBXNativeTarget "WatchAlarm" */;
+			buildPhases = (
+				FD6FC2962B8BC1EC00B2ECD7 /* Sources */,
+				FD6FC2972B8BC1EC00B2ECD7 /* Frameworks */,
+				FD6FC2982B8BC1EC00B2ECD7 /* Resources */,
+				FD6FC2E92B8BC1EF00B2ECD7 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FD6FC2C32B8BC1EE00B2ECD7 /* PBXTargetDependency */,
+			);
+			name = WatchAlarm;
+			productName = WatchAlarm;
+			productReference = FD6FC29A2B8BC1EC00B2ECD7 /* WatchAlarm.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FD6FC2A92B8BC1EE00B2ECD7 /* WatchAlarmTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FD6FC2ED2B8BC1EF00B2ECD7 /* Build configuration list for PBXNativeTarget "WatchAlarmTests" */;
+			buildPhases = (
+				FD6FC2A62B8BC1EE00B2ECD7 /* Sources */,
+				FD6FC2A72B8BC1EE00B2ECD7 /* Frameworks */,
+				FD6FC2A82B8BC1EE00B2ECD7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FD6FC2AC2B8BC1EE00B2ECD7 /* PBXTargetDependency */,
+			);
+			name = WatchAlarmTests;
+			productName = WatchAlarmTests;
+			productReference = FD6FC2AA2B8BC1EE00B2ECD7 /* WatchAlarmTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		FD6FC2B32B8BC1EE00B2ECD7 /* WatchAlarmUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FD6FC2F02B8BC1EF00B2ECD7 /* Build configuration list for PBXNativeTarget "WatchAlarmUITests" */;
+			buildPhases = (
+				FD6FC2B02B8BC1EE00B2ECD7 /* Sources */,
+				FD6FC2B12B8BC1EE00B2ECD7 /* Frameworks */,
+				FD6FC2B22B8BC1EE00B2ECD7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FD6FC2B62B8BC1EE00B2ECD7 /* PBXTargetDependency */,
+			);
+			name = WatchAlarmUITests;
+			productName = WatchAlarmUITests;
+			productReference = FD6FC2B42B8BC1EE00B2ECD7 /* WatchAlarmUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		FD6FC2BF2B8BC1EE00B2ECD7 /* WatchAlarm Watch App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FD6FC2E62B8BC1EF00B2ECD7 /* Build configuration list for PBXNativeTarget "WatchAlarm Watch App" */;
+			buildPhases = (
+				FD6FC2BC2B8BC1EE00B2ECD7 /* Sources */,
+				FD6FC2BD2B8BC1EE00B2ECD7 /* Frameworks */,
+				FD6FC2BE2B8BC1EE00B2ECD7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "WatchAlarm Watch App";
+			productName = "WatchAlarm Watch App";
+			productReference = FD6FC2C02B8BC1EE00B2ECD7 /* WatchAlarm Watch App.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FD6FC2D12B8BC1EF00B2ECD7 /* WatchAlarm Watch AppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FD6FC2F32B8BC1EF00B2ECD7 /* Build configuration list for PBXNativeTarget "WatchAlarm Watch AppTests" */;
+			buildPhases = (
+				FD6FC2CE2B8BC1EF00B2ECD7 /* Sources */,
+				FD6FC2CF2B8BC1EF00B2ECD7 /* Frameworks */,
+				FD6FC2D02B8BC1EF00B2ECD7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FD6FC2D42B8BC1EF00B2ECD7 /* PBXTargetDependency */,
+			);
+			name = "WatchAlarm Watch AppTests";
+			productName = "WatchAlarm Watch AppTests";
+			productReference = FD6FC2D22B8BC1EF00B2ECD7 /* WatchAlarm Watch AppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		FD6FC2DB2B8BC1EF00B2ECD7 /* WatchAlarm Watch AppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FD6FC2F62B8BC1EF00B2ECD7 /* Build configuration list for PBXNativeTarget "WatchAlarm Watch AppUITests" */;
+			buildPhases = (
+				FD6FC2D82B8BC1EF00B2ECD7 /* Sources */,
+				FD6FC2D92B8BC1EF00B2ECD7 /* Frameworks */,
+				FD6FC2DA2B8BC1EF00B2ECD7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FD6FC2DE2B8BC1EF00B2ECD7 /* PBXTargetDependency */,
+			);
+			name = "WatchAlarm Watch AppUITests";
+			productName = "WatchAlarm Watch AppUITests";
+			productReference = FD6FC2DC2B8BC1EF00B2ECD7 /* WatchAlarm Watch AppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FD6FC2922B8BC1EB00B2ECD7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1520;
+				LastUpgradeCheck = 1520;
+				TargetAttributes = {
+					FD6FC2992B8BC1EC00B2ECD7 = {
+						CreatedOnToolsVersion = 15.2;
+					};
+					FD6FC2A92B8BC1EE00B2ECD7 = {
+						CreatedOnToolsVersion = 15.2;
+						TestTargetID = FD6FC2992B8BC1EC00B2ECD7;
+					};
+					FD6FC2B32B8BC1EE00B2ECD7 = {
+						CreatedOnToolsVersion = 15.2;
+						TestTargetID = FD6FC2992B8BC1EC00B2ECD7;
+					};
+					FD6FC2BF2B8BC1EE00B2ECD7 = {
+						CreatedOnToolsVersion = 15.2;
+					};
+					FD6FC2D12B8BC1EF00B2ECD7 = {
+						CreatedOnToolsVersion = 15.2;
+						TestTargetID = FD6FC2BF2B8BC1EE00B2ECD7;
+					};
+					FD6FC2DB2B8BC1EF00B2ECD7 = {
+						CreatedOnToolsVersion = 15.2;
+						TestTargetID = FD6FC2BF2B8BC1EE00B2ECD7;
+					};
+				};
+			};
+			buildConfigurationList = FD6FC2952B8BC1EB00B2ECD7 /* Build configuration list for PBXProject "WatchAlarm" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FD6FC2912B8BC1EB00B2ECD7;
+			productRefGroup = FD6FC29B2B8BC1EC00B2ECD7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FD6FC2992B8BC1EC00B2ECD7 /* WatchAlarm */,
+				FD6FC2A92B8BC1EE00B2ECD7 /* WatchAlarmTests */,
+				FD6FC2B32B8BC1EE00B2ECD7 /* WatchAlarmUITests */,
+				FD6FC2BF2B8BC1EE00B2ECD7 /* WatchAlarm Watch App */,
+				FD6FC2D12B8BC1EF00B2ECD7 /* WatchAlarm Watch AppTests */,
+				FD6FC2DB2B8BC1EF00B2ECD7 /* WatchAlarm Watch AppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FD6FC2982B8BC1EC00B2ECD7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FD6FC2A52B8BC1EE00B2ECD7 /* Preview Assets.xcassets in Resources */,
+				FD6FC2A22B8BC1EE00B2ECD7 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FD6FC2A82B8BC1EE00B2ECD7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FD6FC2B22B8BC1EE00B2ECD7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FD6FC2BE2B8BC1EE00B2ECD7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FD6FC2CD2B8BC1EE00B2ECD7 /* Preview Assets.xcassets in Resources */,
+				FD6FC2CA2B8BC1EE00B2ECD7 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FD6FC2D02B8BC1EF00B2ECD7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FD6FC2DA2B8BC1EF00B2ECD7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FD6FC2962B8BC1EC00B2ECD7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FD6FC2A02B8BC1EC00B2ECD7 /* ContentView.swift in Sources */,
+				FD6FC29E2B8BC1EC00B2ECD7 /* WatchAlarmApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FD6FC2A62B8BC1EE00B2ECD7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FD6FC2AF2B8BC1EE00B2ECD7 /* WatchAlarmTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FD6FC2B02B8BC1EE00B2ECD7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FD6FC2BB2B8BC1EE00B2ECD7 /* WatchAlarmUITestsLaunchTests.swift in Sources */,
+				FD6FC2B92B8BC1EE00B2ECD7 /* WatchAlarmUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FD6FC2BC2B8BC1EE00B2ECD7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FD6FC2C82B8BC1EE00B2ECD7 /* ContentView.swift in Sources */,
+				FD6FC2C62B8BC1EE00B2ECD7 /* WatchAlarmApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FD6FC2CE2B8BC1EF00B2ECD7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FD6FC2D72B8BC1EF00B2ECD7 /* WatchAlarm_Watch_AppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FD6FC2D82B8BC1EF00B2ECD7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FD6FC2E32B8BC1EF00B2ECD7 /* WatchAlarm_Watch_AppUITestsLaunchTests.swift in Sources */,
+				FD6FC2E12B8BC1EF00B2ECD7 /* WatchAlarm_Watch_AppUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FD6FC2AC2B8BC1EE00B2ECD7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FD6FC2992B8BC1EC00B2ECD7 /* WatchAlarm */;
+			targetProxy = FD6FC2AB2B8BC1EE00B2ECD7 /* PBXContainerItemProxy */;
+		};
+		FD6FC2B62B8BC1EE00B2ECD7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FD6FC2992B8BC1EC00B2ECD7 /* WatchAlarm */;
+			targetProxy = FD6FC2B52B8BC1EE00B2ECD7 /* PBXContainerItemProxy */;
+		};
+		FD6FC2C32B8BC1EE00B2ECD7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FD6FC2BF2B8BC1EE00B2ECD7 /* WatchAlarm Watch App */;
+			targetProxy = FD6FC2C22B8BC1EE00B2ECD7 /* PBXContainerItemProxy */;
+		};
+		FD6FC2D42B8BC1EF00B2ECD7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FD6FC2BF2B8BC1EE00B2ECD7 /* WatchAlarm Watch App */;
+			targetProxy = FD6FC2D32B8BC1EF00B2ECD7 /* PBXContainerItemProxy */;
+		};
+		FD6FC2DE2B8BC1EF00B2ECD7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FD6FC2BF2B8BC1EE00B2ECD7 /* WatchAlarm Watch App */;
+			targetProxy = FD6FC2DD2B8BC1EF00B2ECD7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		FD6FC2E42B8BC1EF00B2ECD7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FD6FC2E52B8BC1EF00B2ECD7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		FD6FC2E72B8BC1EF00B2ECD7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"WatchAlarm Watch App/Preview Content\"";
+				DEVELOPMENT_TEAM = XGG73R7JP7;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = WatchAlarm;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = ASNProject.WatchAlarm;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ASNProject.WatchAlarm.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 10.2;
+			};
+			name = Debug;
+		};
+		FD6FC2E82B8BC1EF00B2ECD7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"WatchAlarm Watch App/Preview Content\"";
+				DEVELOPMENT_TEAM = XGG73R7JP7;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = WatchAlarm;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = ASNProject.WatchAlarm;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ASNProject.WatchAlarm.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 10.2;
+			};
+			name = Release;
+		};
+		FD6FC2EB2B8BC1EF00B2ECD7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"WatchAlarm/Preview Content\"";
+				DEVELOPMENT_TEAM = XGG73R7JP7;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = WatchAlarm;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ASNProject.WatchAlarm;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FD6FC2EC2B8BC1EF00B2ECD7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"WatchAlarm/Preview Content\"";
+				DEVELOPMENT_TEAM = XGG73R7JP7;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = WatchAlarm;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ASNProject.WatchAlarm;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FD6FC2EE2B8BC1EF00B2ECD7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = XGG73R7JP7;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ASNProject.WatchAlarmTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WatchAlarm.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/WatchAlarm";
+			};
+			name = Debug;
+		};
+		FD6FC2EF2B8BC1EF00B2ECD7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = XGG73R7JP7;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ASNProject.WatchAlarmTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WatchAlarm.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/WatchAlarm";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FD6FC2F12B8BC1EF00B2ECD7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = XGG73R7JP7;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ASNProject.WatchAlarmUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = WatchAlarm;
+			};
+			name = Debug;
+		};
+		FD6FC2F22B8BC1EF00B2ECD7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = XGG73R7JP7;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ASNProject.WatchAlarmUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = WatchAlarm;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FD6FC2F42B8BC1EF00B2ECD7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = XGG73R7JP7;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "ASNProject.WatchAlarm-Watch-AppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WatchAlarm Watch App.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/WatchAlarm Watch App";
+				WATCHOS_DEPLOYMENT_TARGET = 10.2;
+			};
+			name = Debug;
+		};
+		FD6FC2F52B8BC1EF00B2ECD7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = XGG73R7JP7;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "ASNProject.WatchAlarm-Watch-AppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WatchAlarm Watch App.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/WatchAlarm Watch App";
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 10.2;
+			};
+			name = Release;
+		};
+		FD6FC2F72B8BC1EF00B2ECD7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = XGG73R7JP7;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "ASNProject.WatchAlarm-Watch-AppUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_TARGET_NAME = "WatchAlarm Watch App";
+				WATCHOS_DEPLOYMENT_TARGET = 10.2;
+			};
+			name = Debug;
+		};
+		FD6FC2F82B8BC1EF00B2ECD7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = XGG73R7JP7;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "ASNProject.WatchAlarm-Watch-AppUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_TARGET_NAME = "WatchAlarm Watch App";
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 10.2;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FD6FC2952B8BC1EB00B2ECD7 /* Build configuration list for PBXProject "WatchAlarm" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FD6FC2E42B8BC1EF00B2ECD7 /* Debug */,
+				FD6FC2E52B8BC1EF00B2ECD7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FD6FC2E62B8BC1EF00B2ECD7 /* Build configuration list for PBXNativeTarget "WatchAlarm Watch App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FD6FC2E72B8BC1EF00B2ECD7 /* Debug */,
+				FD6FC2E82B8BC1EF00B2ECD7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FD6FC2EA2B8BC1EF00B2ECD7 /* Build configuration list for PBXNativeTarget "WatchAlarm" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FD6FC2EB2B8BC1EF00B2ECD7 /* Debug */,
+				FD6FC2EC2B8BC1EF00B2ECD7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FD6FC2ED2B8BC1EF00B2ECD7 /* Build configuration list for PBXNativeTarget "WatchAlarmTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FD6FC2EE2B8BC1EF00B2ECD7 /* Debug */,
+				FD6FC2EF2B8BC1EF00B2ECD7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FD6FC2F02B8BC1EF00B2ECD7 /* Build configuration list for PBXNativeTarget "WatchAlarmUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FD6FC2F12B8BC1EF00B2ECD7 /* Debug */,
+				FD6FC2F22B8BC1EF00B2ECD7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FD6FC2F32B8BC1EF00B2ECD7 /* Build configuration list for PBXNativeTarget "WatchAlarm Watch AppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FD6FC2F42B8BC1EF00B2ECD7 /* Debug */,
+				FD6FC2F52B8BC1EF00B2ECD7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FD6FC2F62B8BC1EF00B2ECD7 /* Build configuration list for PBXNativeTarget "WatchAlarm Watch AppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FD6FC2F72B8BC1EF00B2ECD7 /* Debug */,
+				FD6FC2F82B8BC1EF00B2ECD7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FD6FC2922B8BC1EB00B2ECD7 /* Project object */;
+}
