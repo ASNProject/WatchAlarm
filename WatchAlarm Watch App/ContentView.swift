@@ -6,7 +6,7 @@
 //
 
 import SwiftUI
-//import AVFoundation
+import AVFoundation
 import WatchKit
 
 struct Alarm: Identifiable {
@@ -29,11 +29,11 @@ struct ContentView: View {
     @State private var showCountingResults = false
     
     // Set audio
-//    @State private var audioPlayer: AVAudioPlayer?
+    @State private var audioPlayer: AVAudioPlayer?
     @State private var isPlayingAudio = false
     
     //vibration
-//    let haptic = WKHapticType.notification
+    let haptic = WKHapticType.notification
     
     
     var body: some View {
@@ -90,13 +90,15 @@ struct ContentView: View {
             self.checkAlarm()
         }
         .alert(isPresented: $showAlert){
-            Alert(title: Text("Alarm!"), message: Text(alertMessage), dismissButton: .default(Text("OK")) {
+//            self.addHaptic()
+            self.playAudio()
+            return Alert(title: Text("Alarm!"), message: Text(alertMessage), dismissButton: .default(Text("OK")) {
                 if let startTime = startTime {
                     let endTime = Date()
                     let timeDifference = endTime.timeIntervalSince(startTime)
                     countingResult.append(timeDifference)
                     //Stop Audio
-//                    self.stopAudio()
+                    self.stopAudio()
                     // Reset start time
                     self.startTime = nil
                 }
@@ -104,10 +106,10 @@ struct ContentView: View {
             })
         }
         // Play audio
-//        .onAppear {
-////            self.playAudio()
-//            self.addHaptic()
-//        }
+        .onAppear {
+            self.playAudio()
+            self.addHaptic()
+        }
 
     }
     
@@ -152,24 +154,24 @@ struct ContentView: View {
         }
     }
     
-//    func playAudio() {
-//        guard let soundURL = Bundle.main.url(forResource: "tone", withExtension: "wav", subdirectory: "Sounds") else {
-//            return
-//        }
-//        do {
-//            audioPlayer = try AVAudioPlayer(contentsOf: soundURL)
-//            audioPlayer?.play()
-//        } catch {
-//            print("Error playing audio: \(error.localizedDescription)")
-//        }
-//    }
-//    func stopAudio() {
-//        audioPlayer?.stop()
-//    }
-//    
-//    func addHaptic(){
-//        WKInterfaceDevice().play(haptic)
-//    }
+    func playAudio() {
+        guard let soundURL = Bundle.main.url(forResource: "tone", withExtension: "wav", subdirectory: "Sounds") else {
+            return
+        }
+        do {
+            audioPlayer = try AVAudioPlayer(contentsOf: soundURL)
+            audioPlayer?.play()
+        } catch {
+            print("Error playing audio: \(error.localizedDescription)")
+        }
+    }
+    func stopAudio() {
+        audioPlayer?.stop()
+    }
+    
+    func addHaptic(){
+        WKInterfaceDevice().play(haptic)
+    }
 
 }
 
