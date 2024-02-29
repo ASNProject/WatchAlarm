@@ -463,33 +463,50 @@
 ////////////////////////////////////////////////////////
 import SwiftUI
 import UserNotifications
+import WatchKit
 
 struct ContentView: View {
     @StateObject private var alarmManager = AlarmManager()
     @State private var showingAlarmSheet = false
     
+    // Haptic
+    
     let timer = Timer.publish(every: 1, on: .main, in: .common).autoconnect()
     
     var body: some View {
-        VStack {
-            List {
-                ForEach(alarmManager.alarms, id: \.time) { alarm in
-                    Text(alarmTimeString(alarm: alarm.time, runningElapsedTime: alarm.runningElapsedTime))
+        ScrollView {
+            VStack {
+                List {
+                    ForEach(alarmManager.alarms, id: \.time) { alarm in
+                        Text(alarmTimeString(alarm: alarm.time, runningElapsedTime: alarm.runningElapsedTime, selectedOption: alarm.selectedOption))
+                        
+                    }
+                    .onDelete(perform: deleteAlarm)
+                }.frame(height: 100)
+                
+                Button("Add Alarm") {
+                    showingAlarmSheet.toggle()
                 }
-                .onDelete(perform: deleteAlarm)
+                .sheet(isPresented: $showingAlarmSheet) {
+                    AlarmInputView(addAlarm: self.addAlarm)
+                }
+                Button("Request permission"){
+                    UNUserNotificationCenter.current().requestAuthorization(options: [.alert, .badge, .sound]) {
+                        success, error in
+                        if success {
+                            print("All set!")
+                        } else if let error = error {
+                            print(error.localizedDescription)
+                        }
+                    }
+                }
+
             }
-            
-            Button("Add Alarm") {
-                showingAlarmSheet.toggle()
+            .onReceive(timer) { _ in
+                alarmManager.checkAlarms()
             }
-            .sheet(isPresented: $showingAlarmSheet) {
-                AlarmInputView(addAlarm: self.addAlarm)
-            }
+            .environmentObject(alarmManager)
         }
-        .onReceive(timer) { _ in
-            alarmManager.checkAlarms()
-        }
-        .environmentObject(alarmManager)
     }
     
 //    func alarmTimeString(alarm: Date, runningElapsedTime: TimeInterval) -> String {
@@ -504,18 +521,17 @@ struct ContentView: View {
 //        return "\(timeString) - Elapsed Time: \(minutes) min \(seconds) sec \(milliseconds) ms"
 //    }
     
-    func alarmTimeString(alarm: Date, runningElapsedTime: TimeInterval) -> String {
+    func alarmTimeString(alarm: Date, runningElapsedTime: TimeInterval, selectedOption: String) -> String {
         let formatter = DateFormatter()
         formatter.timeStyle = .short
         let timeString = formatter.string(from: alarm)
         
         let milliseconds = Int(runningElapsedTime * 1000)
         
-        return "\(timeString) - Elapsed Time: \(milliseconds) ms"
-    }
+        return "Alarm: \(timeString) \nElapsed Time: \(milliseconds) ms \nSelected Option: \(selectedOption)"    }
     
-    func addAlarm(time: Date) {
-        alarmManager.addAlarm(time: time)
+    func addAlarm(time: Date, selectedOption: String) {
+        alarmManager.addAlarm(time: time, selectedOption: selectedOption)
     }
     
     func deleteAlarm(at offsets: IndexSet) {
@@ -523,28 +539,66 @@ struct ContentView: View {
     }
 }
 
+//struct AlarmInputView: View {
+//    @State private var alarmTime = Date()
+//    var addAlarm: (Date) -> Void
+//    
+//    var body: some View {
+//        VStack {
+//            DatePicker("Select Alarm Time", selection: $alarmTime, displayedComponents: .hourAndMinute)
+//                .datePickerStyle(WheelDatePickerStyle())
+//            
+//            Button("Set Alarm") {
+//                addAlarm(alarmTime)
+//            }
+//        }
+//        .padding()
+//    }
+//}
+
 struct AlarmInputView: View {
     @State private var alarmTime = Date()
-    var addAlarm: (Date) -> Void
+    @State private var selectedOption = "Visual" // Default selected option
+    var addAlarm: (Date, String) -> Void
     
     var body: some View {
-        VStack {
-            DatePicker("Select Alarm Time", selection: $alarmTime, displayedComponents: .hourAndMinute)
-                .datePickerStyle(WheelDatePickerStyle())
-            
-            Button("Set Alarm") {
-                addAlarm(alarmTime)
+        ScrollView{
+            VStack {
+                DatePicker("Select Alarm Time", selection: $alarmTime, displayedComponents: .hourAndMinute)
+                    .datePickerStyle(WheelDatePickerStyle())
+                    .frame(height: 80) // Set height of DatePicker
+                
+                Picker("Alarm Options", selection: $selectedOption) {
+                    Text("Visual").tag("Visual")
+                    Text("Visual & Haptic").tag("Visual & Haptic")
+                    Text("Visual & Audio").tag("Visual & Audio")
+                    Text("Haptic").tag("Haptic")
+                    Text("Haptic & Audio").tag("Haptic & Audio")
+                    Text("Audio").tag("Audio")
+                    Text("All").tag("All")
+                }
+                .pickerStyle(DefaultPickerStyle()) // You can change the style as per your requirement
+                .frame(height: 50) // Set height of Picker
+                
+                Button("Set Alarm") {
+                    addAlarm(alarmTime, selectedOption)
+                }
             }
         }
         .padding()
     }
 }
 
+
+
 class AlarmManager: NSObject, ObservableObject {
     @Published var alarms: [Alarm] = []
     private var timers: [Timer] = [] // Store references to active timers
     
     private let userNotificationCenter = UNUserNotificationCenter.current()
+    
+    let haptic = WKHapticType.notification
+
     
     override init() {
         super.init()
@@ -563,13 +617,19 @@ class AlarmManager: NSObject, ObservableObject {
                     alarms[index].triggeredAt = Date()
                     startAlarmCounting(for: index)
                     scheduleNotification(for: alarm.time)
+//                    self.addHaptic()
                 }
             }
         }
     }
     
-    func addAlarm(time: Date) {
-        alarms.append(Alarm(time: time, triggeredAt: nil, runningElapsedTime: 0))
+    func addHaptic(){
+        WKInterfaceDevice().play(haptic)
+        print("Haptic ON")
+    }
+    
+    func addAlarm(time: Date, selectedOption: String) {
+        alarms.append(Alarm(time: time, triggeredAt: nil, runningElapsedTime: 0, selectedOption: selectedOption))
         
         // Schedule notification for the alarm time
         scheduleNotification(for: time)
@@ -586,12 +646,11 @@ class AlarmManager: NSObject, ObservableObject {
         content.sound = UNNotificationSound.default
         
         // Define actions
-        let snoozeAction = UNNotificationAction(identifier: "Snooze", title: "Snooze", options: [])
         let stopAction = UNNotificationAction(identifier: "Stop", title: "Stop", options: [.foreground])
         
         // Attach actions to notification
         let categoryIdentifier = "alarmCategory"
-        let alarmCategory = UNNotificationCategory(identifier: categoryIdentifier, actions: [snoozeAction, stopAction], intentIdentifiers: [], options: [])
+        let alarmCategory = UNNotificationCategory(identifier: categoryIdentifier, actions: [ stopAction], intentIdentifiers: [], options: [])
         
         userNotificationCenter.setNotificationCategories([alarmCategory])
         
@@ -613,7 +672,24 @@ class AlarmManager: NSObject, ObservableObject {
         }
     }
     
+//    func startAlarmCounting(for index: Int) {
+//        let timer = Timer.scheduledTimer(withTimeInterval: 1, repeats: true) { timer in
+//            guard let triggeredAt = self.alarms[index].triggeredAt else {
+//                timer.invalidate()
+//                return
+//            }
+//            let elapsedTime = Date().timeIntervalSince(triggeredAt)
+//            // Update running elapsed time in the corresponding alarm
+//            self.alarms[index].runningElapsedTime = elapsedTime
+//        }
+//        timers.append(timer) // Store reference to the timer
+//    }
     func startAlarmCounting(for index: Int) {
+        // Pastikan index berada dalam rentang yang valid
+        guard index >= 0 && index < alarms.count else {
+            return
+        }
+        
         let timer = Timer.scheduledTimer(withTimeInterval: 1, repeats: true) { timer in
             guard let triggeredAt = self.alarms[index].triggeredAt else {
                 timer.invalidate()
@@ -625,12 +701,15 @@ class AlarmManager: NSObject, ObservableObject {
         }
         timers.append(timer) // Store reference to the timer
     }
+
 }
 
 struct Alarm {
     var time: Date
     var triggeredAt: Date?
     var runningElapsedTime: TimeInterval // Store running elapsed time
+    var selectedOption: String // Store selected option
+
 }
 
 extension AlarmManager: UNUserNotificationCenterDelegate {
